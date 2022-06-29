@@ -1,11 +1,15 @@
+import JobList from "./components/JobList";
 import HeaderDesktop from "./images/bg-header-desktop.svg";
-import HeaderMobile from "./images/bg-header-mobile.svg";
 
 const App = () => {
   return (
     <>
-      <img src={HeaderDesktop} alt="" />
-      <img src={HeaderMobile} alt="" />
+      <img
+        src={HeaderDesktop}
+        className="object-contain w-full bg-dark-cyan"
+        alt=""
+      />
+      <JobList />
     </>
   );
 };
